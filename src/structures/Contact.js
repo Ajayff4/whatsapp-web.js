@@ -133,7 +133,8 @@ class Contact extends Base {
      * @returns {Promise<string>}
      */
     async getCountryCode() {
-        return await this.client.getCountryCode(this.id._serialized);
+        // return await this.client.getCountryCode(this.id._serialized);
+        return await this.client.extractCountryCode(this.id._serialized);
     }
     
     /**
