@@ -1345,9 +1345,9 @@ class Client extends EventEmitter {
      * @returns {Promise<string>}
      */
     async getCountryCode(number) {
-        console.log("inside getCountryCode", number);
+        // console.log("inside getCountryCode", number);
         number = number.replace(' ', '').replace('+', '').replace('@c.us', '');
-        console.log({number});
+        // console.log({number});
 
         return await this.pupPage.evaluate(async numberId => {
             console.log({numberId});
